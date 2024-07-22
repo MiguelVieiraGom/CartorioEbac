@@ -112,6 +112,7 @@ int deletar()
 	{
 		printf("O usuário não se encontra no sistema! \n");		
 		system("pause");
+		
 	}	
 	
 }
@@ -134,6 +135,7 @@ int main()
 		printf("\t1 - Cadastrar nomes\n");
 		printf("\t2 - Pesquisar nomes\n");
 		printf("\t3 - Deletar nomes\n\n");
+		printf("\t4 - Sair do Sistema\n\n");
 		printf("opções:"); //Fim do menu
 	
 		scanf("%d", &opcao); //Armazenando a escolha do usuásio
@@ -154,6 +156,11 @@ int main()
 			case 3:
 			deletar();
 			break;
+			
+			case 4:
+			printf("Obrigado por utilzar o sistema!\n");
+			return 0;
+		 	break;
 			
 			default:
 			printf("Esta opção não está disponível!\n");
